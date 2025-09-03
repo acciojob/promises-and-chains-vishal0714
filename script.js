@@ -7,7 +7,7 @@ submit.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent form submission
 
     if (myAge.value.trim() === "" || myName.value.trim() === "") {
-        alert("Please enter valid details.");
+        alert("Please enter valid details");
         return; // Exit early if validation fails
     }
 
@@ -16,7 +16,7 @@ submit.addEventListener('click', (event) => {
             if (myAge.value >= 18) {
                 resolve(`Welcome, ${myName.value}. You can vote.`);
             } else {
-                reject(`Oh sorry, ${myName.value}. You aren't old enough.`);
+                reject(`Oh sorry ${myName.value}. You aren't old enough.`);
             }
         }, 4000);
     });
