@@ -11,7 +11,7 @@
 
         myPromise = new Promise((resolve, reject) => {
             setTimeout(() => {
-                if (myAge.value > 18) {
+                if (myAge.value >= 18) {
                     resolve(("Welcome, . You can vote."))
                 } else {
                     reject(("Oh sorry . You aren't old enough."))
