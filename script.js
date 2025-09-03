@@ -3,7 +3,7 @@
     let myName = document.querySelector('#name')
     let submit = document.querySelector('#btn')
 
-    submit.addEventListener('click', () => {
+    submit.addEventListener('click', (event) => {
 		event.preventDefault()
         if (myAge.value.trim() === "" || myName.value.trim() === "") {
             alert("Please enter valid details.")
